@@ -75,7 +75,7 @@ export default function ModalViewAllNews({ data, onClose }) {
     const handleShare = () => {
         const text =
           `Confira esta matéria no FN Book: *${data.title}* \nResultado da verificação: ${data.flag ? "VERDADE" : "MENTIRA"}`;
-        const url = "http://localhost:5173/";
+        const url = "https://portalfnbook.vercel.app/";
         const encodedText = encodeURIComponent(`${text} ${url}`);
         const whatsappUrl = `https://api.whatsapp.com/send?text=${encodedText}`;
     
