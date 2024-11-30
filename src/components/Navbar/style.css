@@ -34,3 +34,19 @@
     font-weight: 600;
     color: #000;
 }
+
+.links .btn-login {
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 1px solid black;
+    margin-right: -36px;
+    transition: .3s;
+}
+
+.links .btn-register, .links .btn-login:hover {
+    padding: 10px 20px;
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+}
+

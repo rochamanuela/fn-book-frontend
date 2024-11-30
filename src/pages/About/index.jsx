@@ -3,8 +3,11 @@ import { AutomaticSlider, DevInfo } from '../../components'
 import { FaWhatsapp } from "react-icons/fa";
 import './style.css'
 
-import imgJen from '../../assets/images/slider/photoUser.png'
-import imgJenColored from '../../assets/images/slider/photoUserColored.png'
+import imgJenAd from '../../assets/images/slider/jennifer-adrieli.png'
+import imgJenAdColored from '../../assets/images/slider/jennifer-adrieli-colored.png'
+
+import imgJenP from '../../assets/images/slider/jennifer-parreira.png'
+import imgJenPColored from '../../assets/images/slider/jennifer-parreira-colored.png'
 
 import imgBeatrizColored from '../../assets/images/slider/beatriz-colored.png'
 import imgBeatriz from '../../assets/images/slider/beatriz.png'
@@ -60,14 +63,14 @@ export default function About() {
         <DevInfo
           devName="Jennifer da Costa"
           devFunction="desenvolvedora frontend"
-          devPhoto={imgJen}
-          devPhotoHover={imgJenColored}
+          devPhoto={imgJenAd}
+          devPhotoHover={imgJenAdColored}
         />
         <DevInfo
           devName="Jennifer Parreira"
           devFunction="desenvolvedora backend"
-          devPhoto={imgJen}
-          devPhotoHover={imgJenColored}
+          devPhoto={imgJenP}
+          devPhotoHover={imgJenPColored}
         />
         <DevInfo
           devName="Giovani dos Reis"
@@ -103,7 +106,7 @@ export default function About() {
         <div className="about-child child-2">
           <h1>Fale conosco</h1>
           <p>Gostaria de falar conosco? nos contate no Whatsapp</p>
-          <p><b><FaWhatsapp size={24}/>(19) 9 8224-8477</b></p>
+          <p><b><FaWhatsapp size={24} />(19) 9 8224-8477</b></p>
           <p>Ou deixe sua mensagem abaixo e aguarde um retorno</p>
           <form onSubmit={handleSubmit}>
             <input

@@ -2,10 +2,6 @@ import React from 'react'
 import { Header, Carousel, Flag, MapWithClusters } from '../../components'
 import './style.css'
 
-import ImgMap from '../../assets/images/imagem-mapa.png'
-
-// import MapWithClusters from '../../components'
-
 export default function Home() {
   return (
     <div className="main-container">
@@ -14,7 +10,6 @@ export default function Home() {
         <div className="map-container">
           <h1>Mapa de compartilhamento</h1>
           <p>Veja onde se concentra a maior incidência de Fake News</p>
-          {/* <img src={ImgMap} alt="" /> */}
           <MapWithClusters/>
         </div>
         <div className="spotlight">
@@ -44,15 +39,14 @@ export default function Home() {
       <div className="faq">
         <div className="faq-content">
           <h1 className="title-faq">Perguntas <span>Frequentes</span></h1>
-          <p className="subtitle-faq">Como cidadão, quero saber como contatar o chatbot pelo WhatsApp</p>
-          <p className="faq-answer">Para contatar o nosso chatbot pelo WhatsApp, basta enviar uma mensagem
-            para o número (XX) XXXXX-XXXX ou acessar o link whatsapp.com/send?phone=XXXXXXXXXXX. Nosso
+          <p className="subtitle-faq">Como cidadão, quero saber como contatar o chatbot pelo Telegram</p>
+          <p className="faq-answer">Para contatar o nosso chatbot pelo Telegram, basta enviar uma mensagem
+            para o bot, que pode ser acessado pelo <strong><a href="https://t.me/fake_news_analyzer_ifsp_hto_bot">clicando aqui</a></strong>. Nosso
             chatbot está disponível 24 horas por dia para responder suas dúvidas e fornecer informações
             atualizadas</p>
           <p className="subtitle-faq">Como cidadão, quero saber como colaborar na identificação de fake news</p>
           <p className="faq-answer">Você pode colaborar na identificação de fake news enviando notícias suspeitas
-            ou links diretamente para o nosso chatbot ou acessando a seção "Denúncias de Fake News" no nosso site.
-            A equipe analisará cada caso e dará retorno sobre a veracidade da informação.</p>
+            ou links diretamente para o nosso chatbot, ele possui suporte para imagens, vídeos e texto.</p>
         </div>
       </div>
       <footer></footer>
