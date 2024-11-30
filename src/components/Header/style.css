@@ -1,7 +1,7 @@
 @import url('../../index.css');
 
 .header-container {
-    height: calc(100vh - 100px);
+    height: calc(100vh - 70px);
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -50,7 +50,7 @@ p.header-lide {
 .line-2 {
     position: absolute;
     right: 0;
-    top: 664px;
+    top: 72%;
 }
 
 .header-subtitle span {
