@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "image": "../public/news/jhope.png",
+        "image": "src/assets/news/jhope.png",
         "topic": "Entretenimento",
         "flag": true,
         "title": "J-Hope finaliza seu período de serviço militar",
@@ -12,7 +12,7 @@
     },
     {
         "id": 2,
-        "image": "../public/news/bacteria.png",
+        "image": "src/assets/news/bacteria.png",
         "topic": "Ciência",
         "flag": true,
         "title": "Descoberta de nova bactéria resistente a antibióticos",
@@ -23,7 +23,7 @@
     },
     {
         "id": 3,
-        "image": "../public/news/amazonia.png",
+        "image": "src/assets/news/amazonia.png",
         "topic": "Meio Ambiente",
         "flag": true,
         "title": "Incêndios florestais atingem recorde na Amazônia em 2024",
@@ -34,7 +34,7 @@
     },
     {
         "id": 4,
-        "image": "../public/news/robot.png",
+        "image": "src/assets/news/robot.png",
         "topic": "Ciência",
         "flag": false,
         "title": "Robôs com consciência artificial já estão em teste",
@@ -45,7 +45,7 @@
     },
     {
         "id": 5,
-        "image": "../public/news/brazil.png",
+        "image": "src/assets/news/brazil.png",
         "topic": "Economia",
         "flag": true,
         "title": "Economia brasileira registra crescimento de 3,2% no último trimestre",
@@ -56,7 +56,7 @@
     },
     {
         "id": 6,
-        "image": "../public/news/nasa.png",
+        "image": "src/assets/news/nasa.png",
         "topic": "Espaço",
         "flag": true,
         "title": "NASA anuncia descoberta de planeta com características semelhantes à Terra",
@@ -67,7 +67,7 @@
     },
     {
         "id": 7,
-        "image": "../public/news/marte.png",
+        "image": "src/assets/news/marte.png",
         "topic": "Espaço",
         "flag": false,
         "title": "Colônia humana em Marte será estabelecida até 2025",
@@ -78,7 +78,7 @@
     },
     {
         "id": 8,
-        "image": "../public/news/oscar.png",
+        "image": "src/assets/news/oscar.png",
         "topic": "Cultura",
         "flag": true,
         "title": "Filme brasileiro é indicado ao Oscar de Melhor Filme Estrangeiro",
@@ -89,7 +89,7 @@
     },
     {
         "id": 9,
-        "image": "../public/news/medicine.png",
+        "image": "src/assets/news/medicine.png",
         "topic": "Saúde",
         "flag": true,
         "title": "Novo medicamento reduz em 70% o risco de ataques cardíacos",
@@ -100,7 +100,7 @@
     },
     {
         "id": 10,
-        "image": "../public/news/clock.png",
+        "image": "src/assets/news/clock.png",
         "topic": "Ciência",
         "flag": false,
         "title": "Cientista afirma ter criado máquina do tempo funcional",

@@ -5,7 +5,7 @@
             {
                 "user": {
                     "name": "Ana Souza",
-                    "photo": "public/users/ana_souza.png"
+                    "photo": "src/assets/users/ana_souza.png"
                 },
                 "content": "Que incrível! O J-Hope merece todo o sucesso e carinho dos fãs após esse tempo difícil no exército. Que venha mais música boa!",
                 "likes": 10
@@ -13,7 +13,7 @@
             {
                 "user": {
                     "name": "Carlos Lima",
-                    "photo": "public/users/carlos_lima.png"
+                    "photo": "src/assets/users/carlos_lima.png"
                 },
                 "content": "Já estava esperando esse retorno! J-Hope é um ícone, que venham mais hits.",
                 "likes": 5
@@ -21,7 +21,7 @@
             {
                 "user": {
                     "name": "Juliana Oliveira",
-                    "photo": "public/users/juliana_oliveira.png"
+                    "photo": "src/assets/users/juliana_oliveira.png"
                 },
                 "content": "J-Hope é um artista completo! Vai ser maravilhoso acompanhar os novos lançamentos.",
                 "likes": 8
@@ -29,7 +29,7 @@
             {
                 "user": {
                     "name": "Marco Antônio",
-                    "photo": "public/users/marco_antonio.png"
+                    "photo": "src/assets/users/marco_antonio.png"
                 },
                 "content": "Ansioso para ouvir o novo trabalho. Ele tem uma energia única!",
                 "likes": 12
@@ -42,7 +42,7 @@
             {
                 "user": {
                     "name": "Juliana Oliveira",
-                    "photo": "public/users/juliana_oliveira.png"
+                    "photo": "src/assets/users/juliana_oliveira.png"
                 },
                 "content": "Essa descoberta é alarmante. Precisamos urgentemente de mais pesquisa para encontrar alternativas aos antibióticos atuais.",
                 "likes": 7
@@ -50,7 +50,7 @@
             {
                 "user": {
                     "name": "Marco Antônio",
-                    "photo": "public/users/marco_antonio.png"
+                    "photo": "src/assets/users/marco_antonio.png"
                 },
                 "content": "A resistência a antibióticos é um problema crescente, e essa bactéria pode ser uma das muitas que surgirão nos próximos anos.",
                 "likes": 3
@@ -58,7 +58,7 @@
             {
                 "user": {
                     "name": "Ricardo Gomes",
-                    "photo": "public/users/ricardo_gomes.png"
+                    "photo": "src/assets/users/ricardo_gomes.png"
                 },
                 "content": "É impressionante como as bactérias evoluem rapidamente para se adaptar aos tratamentos. Isso reforça a importância de desenvolver novas terapias.",
                 "likes": 4
@@ -66,7 +66,7 @@
             {
                 "user": {
                     "name": "Lara Martins",
-                    "photo": "public/users/lara_martins.png"
+                    "photo": "src/assets/users/lara_martins.png"
                 },
                 "content": "O uso excessivo de antibióticos na medicina e na agricultura é um grande problema. Isso só vai piorar se não fizermos algo para controlar.",
                 "likes": 6
@@ -79,7 +79,7 @@
             {
                 "user": {
                     "name": "Fernanda Costa",
-                    "photo": "public/users/fernanda_costa.png"
+                    "photo": "src/assets/users/fernanda_costa.png"
                 },
                 "content": "É alarmante o que está acontecendo na Amazônia. Precisamos agir para preservar esse patrimônio natural que é vital para o nosso planeta.",
                 "likes": 15
@@ -87,7 +87,7 @@
             {
                 "user": {
                     "name": "Pedro Silva",
-                    "photo": "public/users/pedro_silva.png"
+                    "photo": "src/assets/users/pedro_silva.png"
                 },
                 "content": "Sem ações rápidas, a Amazônia vai continuar sofrendo. Isso é um chamado para todos nós.",
                 "likes": 10
@@ -95,7 +95,7 @@
             {
                 "user": {
                     "name": "Beatriz Almeida",
-                    "photo": "public/users/beatriz_almeida.png"
+                    "photo": "src/assets/users/beatriz_almeida.png"
                 },
                 "content": "A Amazônia é nossa responsabilidade. Devemos lutar para proteger o que é nosso!",
                 "likes": 18
@@ -103,7 +103,7 @@
             {
                 "user": {
                     "name": "Roberto Souza",
-                    "photo": "public/users/roberto_souza.png"
+                    "photo": "src/assets/users/roberto_souza.png"
                 },
                 "content": "Precisamos urgentemente de uma conscientização mundial sobre isso. O tempo está se esgotando.",
                 "likes": 12
@@ -116,7 +116,7 @@
             {
                 "user": {
                     "name": "Lara Martins",
-                    "photo": "public/users/lara_martins.png"
+                    "photo": "src/assets/users/lara_martins.png"
                 },
                 "content": "Ainda bem que os especialistas desmentiram essas informações. A ciência tem dado passos incríveis, mas a consciência artificial ainda está longe.",
                 "likes": 6
@@ -124,7 +124,7 @@
             {
                 "user": {
                     "name": "Ricardo Gomes",
-                    "photo": "public/users/ricardo_gomes.png"
+                    "photo": "src/assets/users/ricardo_gomes.png"
                 },
                 "content": "É sempre bom ver a verdade prevalecer. Esses boatos podem criar muita confusão.",
                 "likes": 4
@@ -132,7 +132,7 @@
             {
                 "user": {
                     "name": "Vanessa Lima",
-                    "photo": "public/users/vanessa_lima.png"
+                    "photo": "src/assets/users/vanessa_lima.png"
                 },
                 "content": "Fake news sobre tecnologia sempre geram pânico. Temos que confiar nas fontes científicas!",
                 "likes": 8
@@ -140,7 +140,7 @@
             {
                 "user": {
                     "name": "Tiago Pereira",
-                    "photo": "public/users/tiago_pereira.png"
+                    "photo": "src/assets/users/tiago_pereira.png"
                 },
                 "content": "Precisamos ficar atentos aos rumores. Ciência é baseada em provas, e isso é essencial.",
                 "likes": 5
@@ -153,7 +153,7 @@
             {
                 "user": {
                     "name": "Beatriz Almeida",
-                    "photo": "public/users/beatriz_almeida.png"
+                    "photo": "src/assets/users/beatriz_almeida.png"
                 },
                 "content": "É bom ver a economia brasileira crescendo! Espero que isso se traduza em mais empregos e qualidade de vida para todos.",
                 "likes": 20
@@ -161,7 +161,7 @@
             {
                 "user": {
                     "name": "Tiago Pereira",
-                    "photo": "public/users/tiago_pereira.png"
+                    "photo": "src/assets/users/tiago_pereira.png"
                 },
                 "content": "Se o Brasil continuar nesse ritmo, vamos superar vários obstáculos. Vamos torcer para que isso seja sustentável!",
                 "likes": 15
@@ -169,7 +169,7 @@
             {
                 "user": {
                     "name": "Roberto Souza",
-                    "photo": "public/users/roberto_souza.png"
+                    "photo": "src/assets/users/roberto_souza.png"
                 },
                 "content": "Sim, a recuperação econômica é vital para o Brasil. No entanto, a implementação de políticas públicas de inclusão é fundamental!",
                 "likes": 12
@@ -177,7 +177,7 @@
             {
                 "user": {
                     "name": "Carlos Lima",
-                    "photo": "public/users/carlos_lima.png"
+                    "photo": "src/assets/users/carlos_lima.png"
                 },
                 "content": "A situação econômica está se estabilizando aos poucos, mas a retomada do emprego e do poder de compra são urgentes.",
                 "likes": 10
@@ -190,7 +190,7 @@
             {
                 "user": {
                     "name": "Tiago Pereira",
-                    "photo": "public/users/tiago_pereira.png"
+                    "photo": "src/assets/users/tiago_pereira.png"
                 },
                 "content": "Impressionante! A possibilidade de encontrar vida extraterrestre sempre me fascinou. A NASA está cada vez mais perto de grandes descobertas.",
                 "likes": 45
@@ -198,7 +198,7 @@
             {
                 "user": {
                     "name": "Vanessa Lima",
-                    "photo": "public/users/vanessa_lima.png"
+                    "photo": "src/assets/users/vanessa_lima.png"
                 },
                 "content": "A NASA está fazendo história! Quem sabe não encontramos sinais de vida fora da Terra.",
                 "likes": 40
@@ -206,7 +206,7 @@
             {
                 "user": {
                     "name": "Ricardo Gomes",
-                    "photo": "public/users/ricardo_gomes.png"
+                    "photo": "src/assets/users/ricardo_gomes.png"
                 },
                 "content": "Seria incrível descobrir vida em outro planeta. Isso mudaria tudo o que sabemos sobre o universo.",
                 "likes": 30
@@ -214,7 +214,7 @@
             {
                 "user": {
                     "name": "Roberto Souza",
-                    "photo": "public/users/roberto_souza.png"
+                    "photo": "src/assets/users/roberto_souza.png"
                 },
                 "content": "Estou torcendo para que esses novos dados tragam respostas. A exploração espacial está cada vez mais fascinante.",
                 "likes": 25
@@ -227,7 +227,7 @@
             {
                 "user": {
                     "name": "Carlos Lima",
-                    "photo": "public/users/carlos_lima.png"
+                    "photo": "src/assets/users/carlos_lima.png"
                 },
                 "content": "A ideia de uma colônia humana em Marte até 2025 parece boa, mas é claro que precisamos de mais tempo e desenvolvimento tecnológico.",
                 "likes": 3
@@ -235,7 +235,7 @@
             {
                 "user": {
                     "name": "Ricardo Gomes",
-                    "photo": "public/users/ricardo_gomes.png"
+                    "photo": "src/assets/users/ricardo_gomes.png"
                 },
                 "content": "Isso parece muito otimista. Mars é um grande desafio, e não acredito que vamos conseguir em tão pouco tempo.",
                 "likes": 5
@@ -243,7 +243,7 @@
             {
                 "user": {
                     "name": "Juliana Oliveira",
-                    "photo": "public/users/juliana_oliveira.png"
+                    "photo": "src/assets/users/juliana_oliveira.png"
                 },
                 "content": "Eu acho que até 2025 ainda estamos muito longe disso. O futuro parece promissor, mas as tecnologias necessárias não estão prontas.",
                 "likes": 4
@@ -251,7 +251,7 @@
             {
                 "user": {
                     "name": "Marco Antônio",
-                    "photo": "public/users/marco_antonio.png"
+                    "photo": "src/assets/users/marco_antonio.png"
                 },
                 "content": "Embora pareça um grande avanço, Marte é um ambiente hostil. Será muito mais difícil do que a maioria imagina.",
                 "likes": 6
@@ -264,7 +264,7 @@
             {
                 "user": {
                     "name": "Roberto Souza",
-                    "photo": "public/users/roberto_souza.png"
+                    "photo": "src/assets/users/roberto_souza.png"
                 },
                 "content": "Boa iniciativa! A sustentabilidade precisa ser uma prioridade em todos os países.",
                 "likes": 11
@@ -272,7 +272,7 @@
             {
                 "user": {
                     "name": "Fernanda Costa",
-                    "photo": "public/users/fernanda_costa.png"
+                    "photo": "src/assets/users/fernanda_costa.png"
                 },
                 "content": "A preservação ambiental nunca foi tão urgente. Apoio total a essas medidas.",
                 "likes": 9
@@ -280,7 +280,7 @@
             {
                 "user": {
                     "name": "Pedro Silva",
-                    "photo": "public/users/pedro_silva.png"
+                    "photo": "src/assets/users/pedro_silva.png"
                 },
                 "content": "O mundo precisa de mais ações concretas para combater as mudanças climáticas.",
                 "likes": 8
@@ -288,7 +288,7 @@
             {
                 "user": {
                     "name": "Beatriz Almeida",
-                    "photo": "public/users/beatriz_almeida.png"
+                    "photo": "src/assets/users/beatriz_almeida.png"
                 },
                 "content": "Estamos vendo um aumento significativo das catástrofes naturais, isso deve servir de alerta para todos nós.",
                 "likes": 7
@@ -301,7 +301,7 @@
             {
                 "user": {
                     "name": "Ricardo Gomes",
-                    "photo": "public/users/ricardo_gomes.png"
+                    "photo": "src/assets/users/ricardo_gomes.png"
                 },
                 "content": "Com certeza! A educação é a chave para um futuro melhor. Precisamos investir nela.",
                 "likes": 10
@@ -309,7 +309,7 @@
             {
                 "user": {
                     "name": "Ana Souza",
-                    "photo": "public/users/ana_souza.png"
+                    "photo": "src/assets/users/ana_souza.png"
                 },
                 "content": "A educação é fundamental para quebrar ciclos de pobreza e desigualdade social. Vamos lutar por ela!",
                 "likes": 13
@@ -317,7 +317,7 @@
             {
                 "user": {
                     "name": "Juliana Oliveira",
-                    "photo": "public/users/juliana_oliveira.png"
+                    "photo": "src/assets/users/juliana_oliveira.png"
                 },
                 "content": "A educação transforma vidas. Precisamos que mais pessoas compreendam sua importância.",
                 "likes": 14
@@ -325,7 +325,7 @@
             {
                 "user": {
                     "name": "Vanessa Lima",
-                    "photo": "public/users/vanessa_lima.png"
+                    "photo": "src/assets/users/vanessa_lima.png"
                 },
                 "content": "É bom ver que o Brasil está avançando nesse sentido. Vamos continuar esse movimento!",
                 "likes": 11
@@ -338,7 +338,7 @@
             {
                 "user": {
                     "name": "Carlos Lima",
-                    "photo": "public/users/carlos_lima.png"
+                    "photo": "src/assets/users/carlos_lima.png"
                 },
                 "content": "Esse acordo vai trazer resultados significativos, mas o mundo todo precisa se engajar nessa causa.",
                 "likes": 6
@@ -346,7 +346,7 @@
             {
                 "user": {
                     "name": "Lara Martins",
-                    "photo": "public/users/lara_martins.png"
+                    "photo": "src/assets/users/lara_martins.png"
                 },
                 "content": "A luta contra as desigualdades é fundamental. Espero que esse acordo seja o primeiro de muitos!",
                 "likes": 7
@@ -354,7 +354,7 @@
             {
                 "user": {
                     "name": "Ricardo Gomes",
-                    "photo": "public/users/ricardo_gomes.png"
+                    "photo": "src/assets/users/ricardo_gomes.png"
                 },
                 "content": "O problema é muito mais complexo do que parece, mas fico feliz com a iniciativa.",
                 "likes": 5
@@ -362,7 +362,7 @@
             {
                 "user": {
                     "name": "Roberto Souza",
-                    "photo": "public/users/roberto_souza.png"
+                    "photo": "src/assets/users/roberto_souza.png"
                 },
                 "content": "Precisamos de mais acordos globais para combater as desigualdades. Vamos torcer para que isso realmente aconteça.",
                 "likes": 9
