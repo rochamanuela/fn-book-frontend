@@ -11,7 +11,8 @@ import { VscChromeClose } from "react-icons/vsc";
 
 import woman from '../../assets/images/test/Jaliyah Blackwell.png'
 
-import newsData from '../../mock/comments.json'
+// import newsData from '../../mock/comments'
+import { comments as newsData } from '../../mock/comments'
 
 // const commentData = [
 //     {

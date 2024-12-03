@@ -1,5 +1,8 @@
 import React, { useState } from 'react'
-import data from '../../mock/news.json'
+// import data from '../../mock/news.json'
+
+import { news } from '../../mock/news'
+
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
@@ -8,7 +11,7 @@ import ModalViewAllNews from '../ModalViewAllNews'
 import './style.css'
 
 const Carousel = () => {
-    const miniCardData = ([...data].sort((a, b) => b.views - a.views)).slice(3, 10)
+    const miniCardData = ([...news].sort((a, b) => b.views - a.views)).slice(3, 10)
 
     const settings = {
         dots: true,
