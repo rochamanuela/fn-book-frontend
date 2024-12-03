@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useState, useEffect } from 'react'
 import Input from '../Input'
 import Flag from '../Flag'
 import CommentCard from '../CommentCard'
@@ -11,54 +11,58 @@ import { VscChromeClose } from "react-icons/vsc";
 
 import woman from '../../assets/images/test/Jaliyah Blackwell.png'
 
-const commentData = [
-    {
-        photo: woman,
-        name: "Maria Souza",
-        text: "long established fact that a reader will be distracted by the readable content of",
-        likes: 20
-    },
-    {
-        photo: woman,
-        name: "Maria Santos",
-        text: "long established fact that a reader will be distracted by the readable content of",
-        likes: 20
-    },
-    {
-        photo: woman,
-        name: "Maria Silva",
-        text: "long established fact that a reader will be distracted by the readable content of",
-        likes: 20
-    },
-    {
-        photo: woman,
-        name: "Maria Santos",
-        text: "long established fact that a reader will be distracted by the readable content of",
-        likes: 20
-    },
-    {
-        photo: woman,
-        name: "Maria Silva",
-        text: "long established fact that a reader will be distracted by the readable content of",
-        likes: 20
-    },
-    {
-        photo: woman,
-        name: "Maria Santos",
-        text: "long established fact that a reader will be distracted by the readable content of",
-        likes: 20
-    },
-    {
-        photo: woman,
-        name: "Maria Silva",
-        text: "long established fact that a reader will be distracted by the readable content of",
-        likes: 20
-    },
-]
+import newsData from '../../mock/comments.json'
 
-export default function ModalViewAllNews({ data, onClose }) {
+// const commentData = [
+//     {
+//         photo: woman,
+//         name: "Maria Souza",
+//         text: "long established fact that a reader will be distracted by the readable content of",
+//         likes: 20
+//     },
+//     {
+//         photo: woman,
+//         name: "Maria Santos",
+//         text: "long established fact that a reader will be distracted by the readable content of",
+//         likes: 20
+//     },
+//     {
+//         photo: woman,
+//         name: "Maria Silva",
+//         text: "long established fact that a reader will be distracted by the readable content of",
+//         likes: 20
+//     },
+//     {
+//         photo: woman,
+//         name: "Maria Santos",
+//         text: "long established fact that a reader will be distracted by the readable content of",
+//         likes: 20
+//     },
+//     {
+//         photo: woman,
+//         name: "Maria Silva",
+//         text: "long established fact that a reader will be distracted by the readable content of",
+//         likes: 20
+//     },
+//     {
+//         photo: woman,
+//         name: "Maria Santos",
+//         text: "long established fact that a reader will be distracted by the readable content of",
+//         likes: 20
+//     },
+//     {
+//         photo: woman,
+//         name: "Maria Silva",
+//         text: "long established fact that a reader will be distracted by the readable content of",
+//         likes: 20
+//     },
+// ]
+
+export default function ModalViewAllNews({ data, onClose, index }) {
     const [liked, setLiked] = useState(false)
     const [likeCount, setLikeCount] = useState(data.likes)
+
+    const [comments, setComments] = useState([]);
 
     const handleLike = () => {
         if (liked) {
@@ -70,18 +74,28 @@ export default function ModalViewAllNews({ data, onClose }) {
         }
     }
 
-    console.log(data.flag)
-    // teste
     const handleShare = () => {
         const text =
-          `Confira esta matéria no FN Book: *${data.title}* \nResultado da verificação: ${data.flag ? "VERDADE" : "MENTIRA"}`;
+            `Confira esta matéria no FN Book: *${data.title}* \nResultado da verificação: ${data.flag ? "VERDADE" : "MENTIRA"}`;
         const url = "https://portalfnbook.vercel.app/";
         const encodedText = encodeURIComponent(`${text} ${url}`);
         const whatsappUrl = `https://api.whatsapp.com/send?text=${encodedText}`;
-    
+
         // Redireciona para o link do WhatsApp
         window.open(whatsappUrl, "_blank");
-      };
+    };
+
+
+    // teste dos comentarios
+
+
+    useEffect(() => {
+        // Filtra a notícia pelo newsId e pega os comentários
+        const news = newsData.find(item => item.newsId === data.id);
+        if (news) {
+            setComments(news.comments); // Atualiza os comentários
+        }
+    }, [data.id]);
 
     return (
         <div className="modal-view-information">
@@ -94,12 +108,9 @@ export default function ModalViewAllNews({ data, onClose }) {
                     <div className="infos">
                         <div className="views">
                             <SlEye size={24} />
-                            <p>200</p>
+                            <p>{data.views}</p>
                         </div>
                         <div className="likes">
-                            {/* <LiaHeart size={24} />
-                            <p>30</p> */}
-
                             <button onClick={handleLike} className="btn-like">
                                 {liked ? <LiaHeartSolid size={24} /> : <LiaHeart size={24} />}
                             </button>
@@ -107,7 +118,7 @@ export default function ModalViewAllNews({ data, onClose }) {
                         </div>
                         <div className="share">
                             <PiShareNetwork size={24} onClick={handleShare} />
-                            <p>30</p>
+                            <p>{data.shares}</p>
                         </div>
                         <Flag truth={data.flag} />
                     </div>
@@ -116,12 +127,12 @@ export default function ModalViewAllNews({ data, onClose }) {
                 <div className="comments">
                     <h1>Comentários</h1>
                     <div className="comments-content">
-                        {commentData.map((card) => (
+                        {comments.map((card) => (
                             <CommentCard
-                                name={card.name}
-                                photo={card.photo}
+                                name={card.user.name}
+                                photo={card.user.photo}
                                 likes={card.likes}
-                                text={card.text}
+                                text={card.content}
                             />
                         ))}
                     </div>

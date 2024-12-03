@@ -1,12 +1,30 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { NavLink, useLocation } from 'react-router-dom'
 import './style.css'
 
 export default function navbar() {
     const location = useLocation()
 
+    const [isScrolled, setIsScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 50) {
+                setIsScrolled(true);
+            } else {
+                setIsScrolled(false);
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        // Cleanup do listener quando o componente for desmontado
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
     return (
-        <div className="navbar">
+        <div className={`navbar ${isScrolled ? "scrolled" : ""}`}>
             <div className="logotype">FN Book</div>
             <div className="links">
                 <NavLink to={'/'} className={location.pathname === '/' ? 'active-page' : ''}>Início</NavLink>

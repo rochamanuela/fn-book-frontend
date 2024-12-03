@@ -1,5 +1,15 @@
 .navbar {
     padding: 15px 50px;
+    position: fixed;
+    top: 0;
+    background-color: #f6f1e9;
+    width: -webkit-fill-available;
+    z-index: 50;
+    transition: .3s;
+}
+
+.navbar.scrolled {
+    box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.1);
 }
 
 .navbar,
@@ -43,10 +53,10 @@
     transition: .3s;
 }
 
-.links .btn-register, .links .btn-login:hover {
+.links .btn-register,
+.links .btn-login:hover {
     padding: 10px 20px;
     background-color: black;
     border: 1px solid black;
     color: white;
 }
-

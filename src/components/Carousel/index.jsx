@@ -1,67 +1,15 @@
 import React, { useState } from 'react'
+import data from '../../mock/news.json'
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
-
 import MiniCard from '../MiniCard'
 import ModalViewAllNews from '../ModalViewAllNews'
-
-// Importando imagens
-import hobe from '../../assets/images/test/hobe.png'
-import './style.css'    
-
-const miniCardData = [
-    {
-        image: hobe,
-        topic: "Entretenimento",
-        flag: true,
-        title: "J-Hope finaliza seu período de serviço militar",
-        text: "Após servir ao exército coreano por 2 anos, o querido voltou à vida de um ser humano normal. Agora, ele está focado em reconectar com os fãs, explorar novos projetos e tentar decidir se quer um corte de cabelo diferente. É claro que as ARMYs (e o resto do mundo) ainda estão surtando de alegria com o retorno. Parece que as coisas finalmente estão voltando ao lugar no universo.",
-        likes: 50
-    },
-    {
-        image: hobe,
-        topic: "Entretenimento",
-        flag: false,
-        title: "J-Hope desiste do exército",
-        text: "Após servir ao exército coreano por 2 anos, o querido voltou à vida de um ser humano normal",
-        likes: 50
-    },
-    {
-        image: hobe,
-        topic: "Entretenimento",
-        flag: true,
-        title: "J-Hope finaliza seu período de serviço militar",
-        text: "Após servir ao exército coreano por 2 anos, o querido voltou à vida de um ser humano normal",
-        likes: 50
-    },
-    {
-        image: hobe,
-        topic: "Entretenimento",
-        flag: true,
-        title: "J-Hope finaliza seu período de serviço militar",
-        text: "Após servir ao exército coreano por 2 anos, o querido voltou à vida de um ser humano normal",
-        likes: 50
-    },
-    {
-        image: hobe,
-        topic: "Entretenimento",
-        flag: true,
-        title: "J-Hope finaliza seu período de serviço militar",
-        text: "Após servir ao exército coreano por 2 anos, o querido voltou à vida de um ser humano normal",
-        likes: 50
-    },
-    {
-        image: hobe,
-        topic: "Entretenimento",
-        flag: true,
-        title: "J-Hope finaliza seu período de serviço militar",
-        text: "Após servir ao exército coreano por 2 anos, o querido voltou à vida de um ser humano normal",
-        likes: 50
-    },
-]
+import './style.css'
 
 const Carousel = () => {
+    const miniCardData = ([...data].sort((a, b) => b.views - a.views)).slice(3, 10)
+
     const settings = {
         dots: true,
         infinite: false,
@@ -98,8 +46,8 @@ const Carousel = () => {
     const [modalOpen, setModalOpen] = useState(false)
     const [selectedCardData, setSelectedCardData] = useState(null)
 
-    const viewAllInformations = (cardData) => {
-        setSelectedCardData(cardData)
+    const viewAllInformations = (cardData, index) => {
+        setSelectedCardData(cardData, index)
         setModalOpen(true)
     }
 
@@ -110,6 +58,7 @@ const Carousel = () => {
     return (
         <div className="container-main-carousel">
             <div className="container-carousel">
+                <h2 className="title-carousel">Outras manchetes visitadas</h2>
                 <Slider {...settings}>
                     {miniCardData.map((card, index) => (
                         <div>
@@ -118,9 +67,9 @@ const Carousel = () => {
                                 image={card.image}
                                 topic={card.topic}
                                 flag={card.flag}
-                                title={card.title}
-                                text={truncateText(card.text, 91)}
-                                link={() => viewAllInformations(card)}
+                                title={`#${index + 4} - ${card.title}`}
+                                text={truncateText(card.text, 90)}
+                                link={() => viewAllInformations(card, index)}
                             />
 
                         </div>

@@ -93,7 +93,7 @@ const MapWithClusters = () => {
 }
 
 const MapPage = () => (
-  <MapContainer center={[-22.9099384, -47.0626332]} zoom={6} style={{ height: '500px', width: '900px' }}>
+  <MapContainer center={[-22.9099384, -47.0626332]} zoom={6} style={{ height: '500px', width: '900px', zIndex: 1 }}>
     <TileLayer
       url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png"
       attribution='© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, © <a href="https://carto.com/attributions">CartoDB</a>'

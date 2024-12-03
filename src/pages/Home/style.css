@@ -74,10 +74,22 @@ hr {
 
 .spotlight {
     width: 100%;
-    max-width: 540px;
+    max-width: 560px;
     display: flex;
     flex-direction: column;
     gap: 60px;
+}
+
+.spotlight-content {
+    cursor: pointer;
+}
+
+.spotlight-content h1 {
+    transition: text-decoration .3s;
+}
+
+.spotlight-content h1:hover {
+    text-decoration: underline;
 }
 
 .map-container h1 {
