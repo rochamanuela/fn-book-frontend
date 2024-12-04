@@ -7,57 +7,8 @@ import './style.css'
 import { SlEye } from "react-icons/sl"
 import { LiaHeart, LiaHeartSolid } from "react-icons/lia"
 import { PiShareNetwork } from "react-icons/pi"
-import { VscChromeClose } from "react-icons/vsc";
-
-import woman from '../../assets/images/test/Jaliyah Blackwell.png'
-
-// import newsData from '../../mock/comments'
+import { VscChromeClose } from "react-icons/vsc"
 import { comments as newsData } from '../../mock/comments'
-
-// const commentData = [
-//     {
-//         photo: woman,
-//         name: "Maria Souza",
-//         text: "long established fact that a reader will be distracted by the readable content of",
-//         likes: 20
-//     },
-//     {
-//         photo: woman,
-//         name: "Maria Santos",
-//         text: "long established fact that a reader will be distracted by the readable content of",
-//         likes: 20
-//     },
-//     {
-//         photo: woman,
-//         name: "Maria Silva",
-//         text: "long established fact that a reader will be distracted by the readable content of",
-//         likes: 20
-//     },
-//     {
-//         photo: woman,
-//         name: "Maria Santos",
-//         text: "long established fact that a reader will be distracted by the readable content of",
-//         likes: 20
-//     },
-//     {
-//         photo: woman,
-//         name: "Maria Silva",
-//         text: "long established fact that a reader will be distracted by the readable content of",
-//         likes: 20
-//     },
-//     {
-//         photo: woman,
-//         name: "Maria Santos",
-//         text: "long established fact that a reader will be distracted by the readable content of",
-//         likes: 20
-//     },
-//     {
-//         photo: woman,
-//         name: "Maria Silva",
-//         text: "long established fact that a reader will be distracted by the readable content of",
-//         likes: 20
-//     },
-// ]
 
 export default function ModalViewAllNews({ data, onClose, index }) {
     const [liked, setLiked] = useState(false)
@@ -77,26 +28,21 @@ export default function ModalViewAllNews({ data, onClose, index }) {
 
     const handleShare = () => {
         const text =
-            `Confira esta matéria no FN Book: *${data.title}* \nResultado da verificação: ${data.flag ? "VERDADE" : "MENTIRA"}`;
-        const url = "https://portalfnbook.vercel.app/";
+            `Confira esta matéria no FN Book: *${data.title}* \nResultado da verificação: ${data.flag ? "VERDADE" : "MENTIRA"}`
+        const url = "https://portalfnbook.vercel.app/"
         const encodedText = encodeURIComponent(`${text} ${url}`);
-        const whatsappUrl = `https://api.whatsapp.com/send?text=${encodedText}`;
+        const whatsappUrl = `https://api.whatsapp.com/send?text=${encodedText}`
 
         // Redireciona para o link do WhatsApp
         window.open(whatsappUrl, "_blank");
-    };
-
-
-    // teste dos comentarios
-
+    }
 
     useEffect(() => {
-        // Filtra a notícia pelo newsId e pega os comentários
-        const news = newsData.find(item => item.newsId === data.id);
+        const news = newsData.find(item => item.newsId === data.id)
         if (news) {
-            setComments(news.comments); // Atualiza os comentários
+            setComments(news.comments)
         }
-    }, [data.id]);
+    }, [data.id])
 
     return (
         <div className="modal-view-information">

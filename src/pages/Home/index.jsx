@@ -1,14 +1,10 @@
 import React, {useState} from 'react'
 import { Header, Carousel, Flag, MapWithClusters } from '../../components'
 import ModalViewAllNews from '../../components/ModalViewAllNews'
-// import data from '../../mock/news.json'
-
 import { news as data } from '../../mock/news'
-
 import './style.css'
 
 export default function Home() {
-  // const data = news
   const newsData = [...data].sort((a, b) => b.views - a.views)
   const news = newsData.slice(0, 3)
 

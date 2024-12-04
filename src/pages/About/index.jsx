@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { AutomaticSlider, DevInfo } from '../../components'
-import { FaWhatsapp } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa"
 import './style.css'
 
 import imgJenAd from '../../assets/images/slider/jennifer-adrieli.png'
@@ -29,17 +29,17 @@ import imgVitoria from '../../assets/images/slider/vitoria.png'
 
 
 export default function About() {
-  const [message, setMessage] = useState('');
+  const [message, setMessage] = useState('')
 
   const handleSubmit = (e) => {
-    e.preventDefault();
+    e.preventDefault()
 
-    const subject = encodeURIComponent('Assunto fixo do e-mail');
-    const body = encodeURIComponent(message);
-    const recipient = 'rochadesouzamanuela@gmail.com';
+    const subject = encodeURIComponent('Assunto fixo do e-mail')
+    const body = encodeURIComponent(message)
+    const recipient = 'rochadesouzamanuela@gmail.com'
 
-    window.location.href = `mailto:${recipient}?subject=${subject}&body=${body}`;
-  };
+    window.location.href = `mailto:${recipient}?subject=${subject}&body=${body}`
+  }
 
   return (
     <div className="container-about">
@@ -111,7 +111,7 @@ export default function About() {
           <form onSubmit={handleSubmit}>
             <input
               type="text"
-              placeholder="Escreva sua sugestão ou mensagem aqui"
+              placeholder="Escreva sua mensagem aqui"
               name="message"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
