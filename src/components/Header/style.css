@@ -127,10 +127,11 @@ p.header-lide {
 
     p.header-lide {
         margin-top: 70px;
+        margin-right: 0;
+        padding: 0 7%;
     }
 
     .line-2 {
-        top: 80%;
-        width: 80%;
+        display: none;
     }
 }
