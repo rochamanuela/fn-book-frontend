@@ -22,7 +22,15 @@ const Carousel = () => {
         arrows: false,
         responsive: [
             {
-                breakpoint: 1024,
+                breakpoint: 1740,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                    dots: true,
+                }
+            },
+            {
+                breakpoint: 1400,
                 settings: {
                     slidesToShow: 3,
                     slidesToScroll: 1,
@@ -30,17 +38,18 @@ const Carousel = () => {
                 }
             },
             {
-                breakpoint: 600,
+                breakpoint: 1050,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 1,
                 }
             },
             {
-                breakpoint: 480,
+                breakpoint: 690,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
+                    gap: 2
                 }
             }
         ]
